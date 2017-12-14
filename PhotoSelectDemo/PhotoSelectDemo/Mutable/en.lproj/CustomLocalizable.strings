@@ -1,0 +1,28 @@
+/* 
+  CustomLocalizable.strings
+  PhotoSelectDemo
+
+  Created by mude on 17/1/10.
+  Copyright © 2017年 DreamTouch. All rights reserved.
+*/
+
+
+"showText" = "this is a English Text";
+"testText" = "this is a test";
+"homeTitle"= "test";
+//title
+"homeTitle"= "Test";
+"photoSelectTitle" = "Photo Select";
+"mutableLanguageTitle" = "MutableLanguage";
+"mutableSceneTitle" = "MutableScene";
+"speechTitle" = "Speech Recognition";
+"understandingTitle" = "Semantic Understanding";
+"SIDTitle" = "SID Getting";
+
+
+//home
+"home_Photo" = "Photo";
+"home_MutableLanguage" = "Change MutableLanguage";
+"home_MutableScene" = "Change MutableScene";
+"home_Speech" = "Speech Recognition";
+"home_SID" = "SID";

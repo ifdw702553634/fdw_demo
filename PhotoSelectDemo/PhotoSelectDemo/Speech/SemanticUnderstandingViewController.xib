@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SemanticUnderstandingViewController">
+            <connections>
+                <outlet property="cancelBtn" destination="rlC-lm-4tE" id="nYW-l7-rGJ"/>
+                <outlet property="onlineRecBtn" destination="JId-mC-02p" id="cfA-Fb-AUm"/>
+                <outlet property="stopBtn" destination="YyE-p2-SYY" id="ftr-nU-6Ir"/>
+                <outlet property="textUnderBtn" destination="Bc5-93-TTY" id="Osn-lS-uvX"/>
+                <outlet property="textView" destination="437-1G-ZdN" id="Tma-te-qr6"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="437-1G-ZdN">
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="188" id="Es1-Ni-o8E"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uJk-4g-8J3">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="ywd-1k-pob"/>
+                    </constraints>
+                    <state key="normal" title="清空文本"/>
+                    <connections>
+                        <action selector="clearBtnHandler:" destination="-1" eventType="touchUpInside" id="SN0-nn-C7N"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bc5-93-TTY">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="sQR-wm-w0R"/>
+                    </constraints>
+                    <state key="normal" title="文本理解"/>
+                    <connections>
+                        <action selector="textUnderBtnHandler:" destination="-1" eventType="touchUpInside" id="XE6-sH-lNx"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JId-mC-02p">
+                    <state key="normal" title="开始识别"/>
+                    <connections>
+                        <action selector="onlinRecBtnHandler:" destination="-1" eventType="touchUpInside" id="SqP-Qh-zfX"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rlC-lm-4tE">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="I64-4i-rui"/>
+                    </constraints>
+                    <state key="normal" title="取消"/>
+                    <connections>
+                        <action selector="cancelBtnHandler:" destination="-1" eventType="touchUpInside" id="MAP-7J-u9a"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YyE-p2-SYY">
+                    <state key="normal" title="停止"/>
+                    <connections>
+                        <action selector="stopBtnHandler:" destination="-1" eventType="touchUpInside" id="rlL-Ie-766"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Bc5-93-TTY" firstAttribute="top" secondItem="JId-mC-02p" secondAttribute="bottom" id="7Mj-Cb-XRN"/>
+                <constraint firstItem="YyE-p2-SYY" firstAttribute="width" secondItem="JId-mC-02p" secondAttribute="width" id="9on-aS-KUj"/>
+                <constraint firstAttribute="trailing" secondItem="rlC-lm-4tE" secondAttribute="trailing" id="Exd-vs-T9O"/>
+                <constraint firstItem="YyE-p2-SYY" firstAttribute="leading" secondItem="JId-mC-02p" secondAttribute="trailing" id="FXP-id-CMd"/>
+                <constraint firstItem="437-1G-ZdN" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="88" id="Fx4-Ms-zIk"/>
+                <constraint firstItem="uJk-4g-8J3" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Omq-ib-D51"/>
+                <constraint firstItem="uJk-4g-8J3" firstAttribute="top" secondItem="Bc5-93-TTY" secondAttribute="bottom" id="QFO-Em-fSg"/>
+                <constraint firstAttribute="bottom" secondItem="uJk-4g-8J3" secondAttribute="bottom" id="SDI-Ml-MM2"/>
+                <constraint firstItem="Bc5-93-TTY" firstAttribute="top" secondItem="rlC-lm-4tE" secondAttribute="bottom" id="SIB-0G-0FN"/>
+                <constraint firstItem="rlC-lm-4tE" firstAttribute="width" secondItem="JId-mC-02p" secondAttribute="width" id="U9v-Z9-Ihe"/>
+                <constraint firstItem="YyE-p2-SYY" firstAttribute="height" secondItem="JId-mC-02p" secondAttribute="height" id="ahJ-l7-NRK"/>
+                <constraint firstAttribute="trailing" secondItem="Bc5-93-TTY" secondAttribute="trailing" id="bcS-mT-n86"/>
+                <constraint firstItem="JId-mC-02p" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="coW-AB-QVL"/>
+                <constraint firstAttribute="trailing" secondItem="437-1G-ZdN" secondAttribute="trailing" id="hQo-Zg-bpy"/>
+                <constraint firstItem="rlC-lm-4tE" firstAttribute="height" secondItem="JId-mC-02p" secondAttribute="height" id="kea-Go-Kfw"/>
+                <constraint firstItem="437-1G-ZdN" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="nhk-zO-I6g"/>
+                <constraint firstAttribute="trailing" secondItem="uJk-4g-8J3" secondAttribute="trailing" id="o4W-PF-ipE"/>
+                <constraint firstItem="Bc5-93-TTY" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="pcB-1Y-pgU"/>
+                <constraint firstItem="Bc5-93-TTY" firstAttribute="top" secondItem="YyE-p2-SYY" secondAttribute="bottom" id="zFb-4j-jgA"/>
+                <constraint firstItem="rlC-lm-4tE" firstAttribute="leading" secondItem="YyE-p2-SYY" secondAttribute="trailing" id="ztf-dV-DRu"/>
+            </constraints>
+            <point key="canvasLocation" x="32.5" y="75.5"/>
+        </view>
+    </objects>
+</document>

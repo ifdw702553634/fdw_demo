@@ -1,0 +1,28 @@
+/* 
+  CustomLocalizable.strings
+  PhotoSelectDemo
+
+  Created by mude on 17/1/10.
+  Copyright © 2017年 DreamTouch. All rights reserved.
+*/
+
+
+"showText" = "這是壹個臺灣繁體";
+"testText" = "這是壹個測試";
+"homeTitle"= "測試";
+
+//test
+"homeTitle"= "測試";
+"photoSelectTitle" = "照片選擇";
+"mutableLanguageTitle" = "多語言";
+"mutableSceneTitle" = "多場景";
+"speechTitle" = "語音識別";
+"understandingTitle" = "語意理解";
+"SIDTitle" = "獲取 SID Getting";
+
+//home
+"home_Photo" = "照片";
+"home_MutableLanguage" = "多語言切換";
+"home_MutableScene" = "多場景切換";
+"home_Speech" = "語音識別";
+"home_SID" = "SID";

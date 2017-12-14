@@ -1,0 +1,21 @@
+//
+//  demo_Prefix.pch
+//  PhotoSelectDemo
+//
+//  Created by mude on 17/1/10.
+//  Copyright © 2017年 DreamTouch. All rights reserved.
+//
+
+#ifndef demo_Prefix_pch
+#define demo_Prefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#import "Constants.h"
+#import "DTMutableLanguage.h"
+#import "UIImage+ImageWithColor.h"
+#import "DTMutableScene.h"
+#import <iflyMSC/iflyMSC.h>
+#import "PopupView.h"
+
+#endif /* demo_Prefix_pch */
