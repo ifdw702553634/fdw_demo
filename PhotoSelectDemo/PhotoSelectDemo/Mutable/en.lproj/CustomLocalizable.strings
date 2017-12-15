@@ -18,6 +18,7 @@
 "speechTitle" = "Speech Recognition";
 "understandingTitle" = "Semantic Understanding";
 "SIDTitle" = "SID Getting";
+"constraintTitle" = "Constraint Test";
 
 
 //home
@@ -26,3 +27,5 @@
 "home_MutableScene" = "Change MutableScene";
 "home_Speech" = "Speech Recognition";
 "home_SID" = "SID";
+"home_constraint" = "XIB Constraint Test";
+

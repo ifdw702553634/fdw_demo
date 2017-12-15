@@ -12,6 +12,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FirstViewController">
             <connections>
                 <outlet property="SIDBtn" destination="Os5-8q-tCQ" id="769-B4-AI5"/>
+                <outlet property="constraintBtn" destination="kuK-sN-eMz" id="kEV-qO-ha0"/>
                 <outlet property="mutableLanguageBtn" destination="wjv-cM-UcU" id="z8Z-Pz-zW3"/>
                 <outlet property="mutableSceneBtn" destination="oU1-ro-m1q" id="2u4-mv-bPC"/>
                 <outlet property="photoBtn" destination="a0M-sp-Gv7" id="SQm-0D-TRp"/>
@@ -74,8 +75,19 @@
                         <action selector="getSID:" destination="-1" eventType="touchUpInside" id="Lit-bt-NSb"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kuK-sN-eMz">
+                    <rect key="frame" x="0.0" y="281" width="375" height="51"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="51" id="P8q-MU-4qG"/>
+                    </constraints>
+                    <state key="normal" title="xib约束测试"/>
+                    <connections>
+                        <action selector="constraintTest:" destination="-1" eventType="touchUpInside" id="BaM-FT-lJP"/>
+                    </connections>
+                </button>
             </subviews>
             <constraints>
+                <constraint firstItem="kuK-sN-eMz" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="0pr-wF-e7R"/>
                 <constraint firstItem="z6W-D3-IRm" firstAttribute="top" secondItem="oU1-ro-m1q" secondAttribute="bottom" id="4PT-0V-VAm"/>
                 <constraint firstAttribute="trailing" secondItem="oU1-ro-m1q" secondAttribute="trailing" id="7vx-Xr-2qx"/>
                 <constraint firstAttribute="trailing" secondItem="a0M-sp-Gv7" secondAttribute="trailing" id="9b9-Dp-wca"/>
@@ -83,6 +95,7 @@
                 <constraint firstAttribute="trailing" secondItem="z6W-D3-IRm" secondAttribute="trailing" id="DEK-aK-zKZ"/>
                 <constraint firstItem="oU1-ro-m1q" firstAttribute="top" secondItem="wjv-cM-UcU" secondAttribute="bottom" id="YSw-04-A3B"/>
                 <constraint firstItem="wjv-cM-UcU" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="a5n-12-aUT"/>
+                <constraint firstItem="kuK-sN-eMz" firstAttribute="top" secondItem="Os5-8q-tCQ" secondAttribute="bottom" id="aWz-bx-9yp"/>
                 <constraint firstItem="Os5-8q-tCQ" firstAttribute="top" secondItem="z6W-D3-IRm" secondAttribute="bottom" id="b4U-XU-PWM"/>
                 <constraint firstItem="z6W-D3-IRm" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="cQt-vB-Dxg"/>
                 <constraint firstItem="wjv-cM-UcU" firstAttribute="top" secondItem="a0M-sp-Gv7" secondAttribute="bottom" id="chs-16-D8Z"/>
@@ -90,6 +103,7 @@
                 <constraint firstItem="oU1-ro-m1q" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="fqt-RK-B5y"/>
                 <constraint firstItem="Os5-8q-tCQ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="hND-q7-lJC"/>
                 <constraint firstItem="a0M-sp-Gv7" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="1" id="oQ9-2U-nfA"/>
+                <constraint firstAttribute="trailing" secondItem="kuK-sN-eMz" secondAttribute="trailing" id="omh-ck-sT3"/>
                 <constraint firstAttribute="trailing" secondItem="Os5-8q-tCQ" secondAttribute="trailing" id="wfg-H5-deS"/>
             </constraints>
             <point key="canvasLocation" x="32.5" y="62.5"/>

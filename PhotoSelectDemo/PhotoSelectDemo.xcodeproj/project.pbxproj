@@ -56,6 +56,8 @@
 		C33235C41DE2900D00E6D3D7 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C33235C31DE2900D00E6D3D7 /* Photos.framework */; };
 		C34418E61E120721001B58F7 /* TodayCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C34418E21E120142001B58F7 /* TodayCollectionViewCell.m */; };
 		C34418E71E12072A001B58F7 /* TodayCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C34418E31E120142001B58F7 /* TodayCollectionViewCell.xib */; };
+		C34CF8E81FE36B4F00F47750 /* ConstraintTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C34CF8E61FE36B4F00F47750 /* ConstraintTestViewController.m */; };
+		C34CF8E91FE36B4F00F47750 /* ConstraintTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C34CF8E71FE36B4F00F47750 /* ConstraintTestViewController.xib */; };
 		C3AC8E411E120AEE0053992A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C332359B1DE28FF500E6D3D7 /* Assets.xcassets */; };
 		C3AC8E431E120AF40053992A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C332359B1DE28FF500E6D3D7 /* Assets.xcassets */; };
 		C3BA14BD1FE24FCC00FE3780 /* SIDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3BA14BC1FE24FCC00FE3780 /* SIDViewController.m */; };
@@ -254,6 +256,9 @@
 		C34418E11E120142001B58F7 /* TodayCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TodayCollectionViewCell.h; sourceTree = "<group>"; };
 		C34418E21E120142001B58F7 /* TodayCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TodayCollectionViewCell.m; sourceTree = "<group>"; };
 		C34418E31E120142001B58F7 /* TodayCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TodayCollectionViewCell.xib; sourceTree = "<group>"; };
+		C34CF8E51FE36B4F00F47750 /* ConstraintTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConstraintTestViewController.h; sourceTree = "<group>"; };
+		C34CF8E61FE36B4F00F47750 /* ConstraintTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConstraintTestViewController.m; sourceTree = "<group>"; };
+		C34CF8E71FE36B4F00F47750 /* ConstraintTestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConstraintTestViewController.xib; sourceTree = "<group>"; };
 		C3B921531EF12EF700319DEE /* PhotoSelectDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PhotoSelectDemo.entitlements; sourceTree = "<group>"; };
 		C3BA14BB1FE24FCC00FE3780 /* SIDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIDViewController.h; sourceTree = "<group>"; };
 		C3BA14BC1FE24FCC00FE3780 /* SIDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIDViewController.m; sourceTree = "<group>"; };
@@ -516,6 +521,7 @@
 				C31B0EC91E24C26F00920165 /* Mutable */,
 				C31B0ED21E24C26F00920165 /* PhotoSelect */,
 				C3BA14BA1FE24FCC00FE3780 /* SID */,
+				C34CF8E41FE36B2300F47750 /* ConstraintTest */,
 				C332359B1DE28FF500E6D3D7 /* Assets.xcassets */,
 				C3BA14BE1FE2504A00FE3780 /* Application */,
 				C332358F1DE28FF500E6D3D7 /* Supporting Files */,
@@ -580,6 +586,16 @@
 				C3C700CC1E10B7A3009CDF6E /* NotificationCenter.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C34CF8E41FE36B2300F47750 /* ConstraintTest */ = {
+			isa = PBXGroup;
+			children = (
+				C34CF8E51FE36B4F00F47750 /* ConstraintTestViewController.h */,
+				C34CF8E61FE36B4F00F47750 /* ConstraintTestViewController.m */,
+				C34CF8E71FE36B4F00F47750 /* ConstraintTestViewController.xib */,
+			);
+			path = ConstraintTest;
 			sourceTree = "<group>";
 		};
 		C3BA14BA1FE24FCC00FE3780 /* SID */ = {
@@ -853,6 +869,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C34CF8E91FE36B4F00F47750 /* ConstraintTestViewController.xib in Resources */,
 				C3AC8E411E120AEE0053992A /* Assets.xcassets in Resources */,
 				C3D21DB41DF119C10060B14F /* FirstViewController.xib in Resources */,
 				C31B0EE01E24C26F00920165 /* MutableSceneViewController.xib in Resources */,
@@ -928,6 +945,7 @@
 				C31B0EE41E24C26F00920165 /* SelectPhotoViewController.m in Sources */,
 				C30AF0E71E26007C002A3949 /* AlertView.m in Sources */,
 				C30AF0EE1E26007C002A3949 /* SBJson4StreamWriter.m in Sources */,
+				C34CF8E81FE36B4F00F47750 /* ConstraintTestViewController.m in Sources */,
 				C31B0F051E24C65200920165 /* DTMutableScene.m in Sources */,
 				C30AF0BD1E25D496002A3949 /* SpeechRecognitionViewController.m in Sources */,
 				C3BA14C81FE2504B00FE3780 /* AppDelegate.m in Sources */,

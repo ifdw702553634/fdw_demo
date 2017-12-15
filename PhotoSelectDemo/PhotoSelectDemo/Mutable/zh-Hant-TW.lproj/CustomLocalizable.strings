@@ -19,6 +19,7 @@
 "speechTitle" = "語音識別";
 "understandingTitle" = "語意理解";
 "SIDTitle" = "獲取 SID Getting";
+"constraintTitle" = "約束測試";
 
 //home
 "home_Photo" = "照片";
@@ -26,3 +27,4 @@
 "home_MutableScene" = "多場景切換";
 "home_Speech" = "語音識別";
 "home_SID" = "SID";
+"home_constraint" = "xib約束測試";

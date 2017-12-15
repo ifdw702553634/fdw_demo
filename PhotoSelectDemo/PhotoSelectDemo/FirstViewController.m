@@ -12,6 +12,7 @@
 #import "MutableSceneViewController.h"
 #import "SpeechRecognitionViewController.h"
 #import "SIDViewController.h"
+#import "ConstraintTestViewController.h"
 
 @interface FirstViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *photoBtn;
@@ -19,6 +20,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *mutableSceneBtn;
 @property (weak, nonatomic) IBOutlet UIButton *speechRecognitionBtn;
 @property (weak, nonatomic) IBOutlet UIButton *SIDBtn;
+@property (weak, nonatomic) IBOutlet UIButton *constraintBtn;
 
 @end
 
@@ -37,6 +39,7 @@
     [_mutableSceneBtn setTitle:CustomLocalizedString(@"home_MutableScene", nil) forState:UIControlStateNormal];
     [_speechRecognitionBtn setTitle:CustomLocalizedString(@"home_Speech", nil) forState:UIControlStateNormal];
     [_SIDBtn setTitle:CustomLocalizedString(@"home_SID", nil) forState:UIControlStateNormal];
+    [_constraintBtn setTitle:CustomLocalizedString(@"home_constraint", nil) forState:UIControlStateNormal];
 }
 - (IBAction)selectPhoto:(id)sender {
     SelectPhotoViewController *vc = [[SelectPhotoViewController alloc] init];
@@ -56,6 +59,10 @@
 }
 - (IBAction)getSID:(id)sender {
     SIDViewController *vc = [[SIDViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+- (IBAction)constraintTest:(id)sender {
+    ConstraintTestViewController *vc = [[ConstraintTestViewController alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
 }
 

@@ -18,6 +18,7 @@
 "speechTitle" = "语音识别";
 "understandingTitle" = "语义理解";
 "SIDTitle" = "获取SID";
+"constraintTitle" = "约束测试";
 
 //home
 "home_Photo" = "照片";
@@ -25,6 +26,7 @@
 "home_MutableScene" = "多场景切换";
 "home_Speech" = "语音识别";
 "home_SID" = "SID";
+"home_constraint" = "xib约束测试";
 
 //scene
 "backgroundColor_0" = "#d3ebdc";
