@@ -20,6 +20,8 @@
 "understandingTitle" = "語意理解";
 "SIDTitle" = "獲取 SID Getting";
 "constraintTitle" = "約束測試";
+"realmTitle" = "realm測試";
+
 
 //home
 "home_Photo" = "照片";
@@ -28,3 +30,4 @@
 "home_Speech" = "語音識別";
 "home_SID" = "SID";
 "home_constraint" = "xib約束測試";
+"home_realm" = "Realm測試";

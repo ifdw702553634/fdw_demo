@@ -56,8 +56,15 @@
 		C33235C41DE2900D00E6D3D7 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C33235C31DE2900D00E6D3D7 /* Photos.framework */; };
 		C34418E61E120721001B58F7 /* TodayCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C34418E21E120142001B58F7 /* TodayCollectionViewCell.m */; };
 		C34418E71E12072A001B58F7 /* TodayCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C34418E31E120142001B58F7 /* TodayCollectionViewCell.xib */; };
+		C345CD541FE8EE19006C132C /* RealmTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C345CD521FE8EE19006C132C /* RealmTestViewController.m */; };
+		C345CD551FE8EE19006C132C /* RealmTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C345CD531FE8EE19006C132C /* RealmTestViewController.xib */; };
 		C34CF8E81FE36B4F00F47750 /* ConstraintTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C34CF8E61FE36B4F00F47750 /* ConstraintTestViewController.m */; };
 		C34CF8E91FE36B4F00F47750 /* ConstraintTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C34CF8E71FE36B4F00F47750 /* ConstraintTestViewController.xib */; };
+		C36B3A251FE8F034002653D2 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C36B3A241FE8F034002653D2 /* Realm.framework */; };
+		C36B3A261FE8F03C002653D2 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C36B3A241FE8F034002653D2 /* Realm.framework */; };
+		C36B3A271FE8F03C002653D2 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C36B3A241FE8F034002653D2 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C36B3A2B1FE8F8A8002653D2 /* RealmTestObj.m in Sources */ = {isa = PBXBuildFile; fileRef = C36B3A2A1FE8F8A8002653D2 /* RealmTestObj.m */; };
+		C36B3A2E1FE9050E002653D2 /* RealmShare.m in Sources */ = {isa = PBXBuildFile; fileRef = C36B3A2D1FE9050E002653D2 /* RealmShare.m */; };
 		C3AC8E411E120AEE0053992A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C332359B1DE28FF500E6D3D7 /* Assets.xcassets */; };
 		C3AC8E431E120AF40053992A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C332359B1DE28FF500E6D3D7 /* Assets.xcassets */; };
 		C3BA14BD1FE24FCC00FE3780 /* SIDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3BA14BC1FE24FCC00FE3780 /* SIDViewController.m */; };
@@ -162,6 +169,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				C36B3A271FE8F03C002653D2 /* Realm.framework in Embed Frameworks */,
 				C3C700FE1E10EFAF009CDF6E /* TodayKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -256,9 +264,17 @@
 		C34418E11E120142001B58F7 /* TodayCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TodayCollectionViewCell.h; sourceTree = "<group>"; };
 		C34418E21E120142001B58F7 /* TodayCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TodayCollectionViewCell.m; sourceTree = "<group>"; };
 		C34418E31E120142001B58F7 /* TodayCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TodayCollectionViewCell.xib; sourceTree = "<group>"; };
+		C345CD511FE8EE19006C132C /* RealmTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RealmTestViewController.h; sourceTree = "<group>"; };
+		C345CD521FE8EE19006C132C /* RealmTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RealmTestViewController.m; sourceTree = "<group>"; };
+		C345CD531FE8EE19006C132C /* RealmTestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RealmTestViewController.xib; sourceTree = "<group>"; };
 		C34CF8E51FE36B4F00F47750 /* ConstraintTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConstraintTestViewController.h; sourceTree = "<group>"; };
 		C34CF8E61FE36B4F00F47750 /* ConstraintTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConstraintTestViewController.m; sourceTree = "<group>"; };
 		C34CF8E71FE36B4F00F47750 /* ConstraintTestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConstraintTestViewController.xib; sourceTree = "<group>"; };
+		C36B3A241FE8F034002653D2 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
+		C36B3A291FE8F8A8002653D2 /* RealmTestObj.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RealmTestObj.h; sourceTree = "<group>"; };
+		C36B3A2A1FE8F8A8002653D2 /* RealmTestObj.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RealmTestObj.m; sourceTree = "<group>"; };
+		C36B3A2C1FE9050E002653D2 /* RealmShare.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RealmShare.h; sourceTree = "<group>"; };
+		C36B3A2D1FE9050E002653D2 /* RealmShare.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RealmShare.m; sourceTree = "<group>"; };
 		C3B921531EF12EF700319DEE /* PhotoSelectDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PhotoSelectDemo.entitlements; sourceTree = "<group>"; };
 		C3BA14BB1FE24FCC00FE3780 /* SIDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIDViewController.h; sourceTree = "<group>"; };
 		C3BA14BC1FE24FCC00FE3780 /* SIDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIDViewController.m; sourceTree = "<group>"; };
@@ -308,6 +324,7 @@
 				C3CBF5C41EF0D124008B809B /* libsqlite3.0.tbd in Frameworks */,
 				C3EF11191E64042F005E6589 /* libc++.tbd in Frameworks */,
 				C3EF11151E64041A005E6589 /* libbz2.1.0.tbd in Frameworks */,
+				C36B3A251FE8F034002653D2 /* Realm.framework in Frameworks */,
 				C3EF11131E640413005E6589 /* libz.1.2.5.tbd in Frameworks */,
 				C3EF11111E64040D005E6589 /* libiconv.2.4.0.tbd in Frameworks */,
 				C3BA14C61FE2504B00FE3780 /* iflyMSC.framework in Frameworks */,
@@ -322,6 +339,7 @@
 				C30AF0B31E25D1DA002A3949 /* CoreGraphics.framework in Frameworks */,
 				C30AF0B11E25D1C5002A3949 /* QuartzCore.framework in Frameworks */,
 				C30AF0AF1E25D1B9002A3949 /* SystemConfiguration.framework in Frameworks */,
+				C36B3A261FE8F03C002653D2 /* Realm.framework in Frameworks */,
 				C30AF0AB1E25D1A1002A3949 /* AddressBook.framework in Frameworks */,
 				C30AF0A91E25D197002A3949 /* AVFoundation.framework in Frameworks */,
 				C30AF0A71E25D172002A3949 /* Foundation.framework in Frameworks */,
@@ -522,6 +540,7 @@
 				C31B0ED21E24C26F00920165 /* PhotoSelect */,
 				C3BA14BA1FE24FCC00FE3780 /* SID */,
 				C34CF8E41FE36B2300F47750 /* ConstraintTest */,
+				C345CD501FE8EE05006C132C /* Realm */,
 				C332359B1DE28FF500E6D3D7 /* Assets.xcassets */,
 				C3BA14BE1FE2504A00FE3780 /* Application */,
 				C332358F1DE28FF500E6D3D7 /* Supporting Files */,
@@ -588,6 +607,21 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		C345CD501FE8EE05006C132C /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				C36B3A241FE8F034002653D2 /* Realm.framework */,
+				C345CD511FE8EE19006C132C /* RealmTestViewController.h */,
+				C345CD521FE8EE19006C132C /* RealmTestViewController.m */,
+				C345CD531FE8EE19006C132C /* RealmTestViewController.xib */,
+				C36B3A291FE8F8A8002653D2 /* RealmTestObj.h */,
+				C36B3A2A1FE8F8A8002653D2 /* RealmTestObj.m */,
+				C36B3A2C1FE9050E002653D2 /* RealmShare.h */,
+				C36B3A2D1FE9050E002653D2 /* RealmShare.m */,
+			);
+			path = Realm;
+			sourceTree = "<group>";
+		};
 		C34CF8E41FE36B2300F47750 /* ConstraintTest */ = {
 			isa = PBXGroup;
 			children = (
@@ -613,9 +647,9 @@
 				C3BA14C21FE2504A00FE3780 /* Reveal.framework */,
 				C3BA14BF1FE2504A00FE3780 /* iflyMSC.framework */,
 				C3BA14C01FE2504A00FE3780 /* AppDelegate.h */,
+				C3BA14C41FE2504A00FE3780 /* AppDelegate.m */,
 				C3BA14C11FE2504A00FE3780 /* demo_Prefix.pch */,
 				C3BA14C31FE2504A00FE3780 /* Constants.h */,
-				C3BA14C41FE2504A00FE3780 /* AppDelegate.m */,
 				C3BA14C51FE2504A00FE3780 /* Info.plist */,
 			);
 			path = Application;
@@ -680,6 +714,7 @@
 				C332358A1DE28FF500E6D3D7 /* Resources */,
 				C3C700DC1E10B7A3009CDF6E /* Embed App Extensions */,
 				C3C701021E10EFAF009CDF6E /* Embed Frameworks */,
+				C36B3A281FE8F068002653D2 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -877,6 +912,7 @@
 				C30AF0BE1E25D496002A3949 /* SpeechRecognitionViewController.xib in Resources */,
 				C31B0EE31E24C26F00920165 /* SelectPhotoCollectionViewCell.xib in Resources */,
 				C31B0EFC1E24C47200920165 /* CustomLocalizable.strings in Resources */,
+				C345CD551FE8EE19006C132C /* RealmTestViewController.xib in Resources */,
 				C31B0EE51E24C26F00920165 /* SelectPhotoViewController.xib in Resources */,
 				C3BA14C91FE2504B00FE3780 /* Info.plist in Resources */,
 				C3213BDA1E27190D00FB42E7 /* SemanticUnderstandingViewController.xib in Resources */,
@@ -923,12 +959,29 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		C36B3A281FE8F068002653D2 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "bash \"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework/strip-frameworks.sh\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C33235881DE28FF500E6D3D7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				C30AF0EB1E26007C002A3949 /* SBJson4StreamParser.m in Sources */,
+				C36B3A2E1FE9050E002653D2 /* RealmShare.m in Sources */,
 				C3BA14BD1FE24FCC00FE3780 /* SIDViewController.m in Sources */,
 				C30AF0CA1E25FD30002A3949 /* ISRDataHelper.m in Sources */,
 				C31B0EDC1E24C26F00920165 /* DTMutableLanguage.m in Sources */,
@@ -946,10 +999,12 @@
 				C30AF0E71E26007C002A3949 /* AlertView.m in Sources */,
 				C30AF0EE1E26007C002A3949 /* SBJson4StreamWriter.m in Sources */,
 				C34CF8E81FE36B4F00F47750 /* ConstraintTestViewController.m in Sources */,
+				C345CD541FE8EE19006C132C /* RealmTestViewController.m in Sources */,
 				C31B0F051E24C65200920165 /* DTMutableScene.m in Sources */,
 				C30AF0BD1E25D496002A3949 /* SpeechRecognitionViewController.m in Sources */,
 				C3BA14C81FE2504B00FE3780 /* AppDelegate.m in Sources */,
 				C30AF0EC1E26007C002A3949 /* SBJson4StreamParserState.m in Sources */,
+				C36B3A2B1FE8F8A8002653D2 /* RealmTestObj.m in Sources */,
 				C33235911DE28FF500E6D3D7 /* main.m in Sources */,
 				C3D21DB31DF119C10060B14F /* FirstViewController.m in Sources */,
 				C30AF0E91E26007C002A3949 /* PopupView.m in Sources */,
@@ -1156,11 +1211,13 @@
 					"$(PROJECT_DIR)/DTDoorbellControl/build/Debug-iphoneos",
 					"$(PROJECT_DIR)/DTYooseeControl/build/Debug-iphoneos",
 					"$(PROJECT_DIR)/PhotoSelectDemo/Application",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/PhotoSelectDemo/Realm",
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu89;
 				GCC_PREFIX_HEADER = PhotoSelectDemo/Application/demo_Prefix.pch;
 				INFOPLIST_FILE = PhotoSelectDemo/Application/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1188,11 +1245,13 @@
 					"$(PROJECT_DIR)/DTDoorbellControl/build/Debug-iphoneos",
 					"$(PROJECT_DIR)/DTYooseeControl/build/Debug-iphoneos",
 					"$(PROJECT_DIR)/PhotoSelectDemo/Application",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/PhotoSelectDemo/Realm",
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu89;
 				GCC_PREFIX_HEADER = PhotoSelectDemo/Application/demo_Prefix.pch;
 				INFOPLIST_FILE = PhotoSelectDemo/Application/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",

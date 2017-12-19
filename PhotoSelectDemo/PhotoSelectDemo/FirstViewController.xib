@@ -16,6 +16,7 @@
                 <outlet property="mutableLanguageBtn" destination="wjv-cM-UcU" id="z8Z-Pz-zW3"/>
                 <outlet property="mutableSceneBtn" destination="oU1-ro-m1q" id="2u4-mv-bPC"/>
                 <outlet property="photoBtn" destination="a0M-sp-Gv7" id="SQm-0D-TRp"/>
+                <outlet property="realmBtn" destination="6tc-6C-Jug" id="TrD-yT-cH1"/>
                 <outlet property="speechRecognitionBtn" destination="z6W-D3-IRm" id="IEV-va-uVX"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -85,6 +86,16 @@
                         <action selector="constraintTest:" destination="-1" eventType="touchUpInside" id="BaM-FT-lJP"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6tc-6C-Jug">
+                    <rect key="frame" x="0.0" y="332" width="375" height="51"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="51" id="eSa-7y-xG7"/>
+                    </constraints>
+                    <state key="normal" title="Realm测试"/>
+                    <connections>
+                        <action selector="realmTest:" destination="-1" eventType="touchUpInside" id="0vu-nf-RUY"/>
+                    </connections>
+                </button>
             </subviews>
             <constraints>
                 <constraint firstItem="kuK-sN-eMz" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="0pr-wF-e7R"/>
@@ -93,15 +104,18 @@
                 <constraint firstAttribute="trailing" secondItem="a0M-sp-Gv7" secondAttribute="trailing" id="9b9-Dp-wca"/>
                 <constraint firstItem="a0M-sp-Gv7" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Ceg-iV-yz9"/>
                 <constraint firstAttribute="trailing" secondItem="z6W-D3-IRm" secondAttribute="trailing" id="DEK-aK-zKZ"/>
+                <constraint firstItem="6tc-6C-Jug" firstAttribute="top" secondItem="kuK-sN-eMz" secondAttribute="bottom" id="QxP-5D-9tz"/>
                 <constraint firstItem="oU1-ro-m1q" firstAttribute="top" secondItem="wjv-cM-UcU" secondAttribute="bottom" id="YSw-04-A3B"/>
                 <constraint firstItem="wjv-cM-UcU" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="a5n-12-aUT"/>
                 <constraint firstItem="kuK-sN-eMz" firstAttribute="top" secondItem="Os5-8q-tCQ" secondAttribute="bottom" id="aWz-bx-9yp"/>
                 <constraint firstItem="Os5-8q-tCQ" firstAttribute="top" secondItem="z6W-D3-IRm" secondAttribute="bottom" id="b4U-XU-PWM"/>
                 <constraint firstItem="z6W-D3-IRm" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="cQt-vB-Dxg"/>
                 <constraint firstItem="wjv-cM-UcU" firstAttribute="top" secondItem="a0M-sp-Gv7" secondAttribute="bottom" id="chs-16-D8Z"/>
+                <constraint firstItem="6tc-6C-Jug" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="dqn-kg-wWZ"/>
                 <constraint firstAttribute="trailing" secondItem="wjv-cM-UcU" secondAttribute="trailing" id="fHS-o4-Ce1"/>
                 <constraint firstItem="oU1-ro-m1q" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="fqt-RK-B5y"/>
                 <constraint firstItem="Os5-8q-tCQ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="hND-q7-lJC"/>
+                <constraint firstAttribute="trailing" secondItem="6tc-6C-Jug" secondAttribute="trailing" id="lXq-jJ-RXW"/>
                 <constraint firstItem="a0M-sp-Gv7" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="1" id="oQ9-2U-nfA"/>
                 <constraint firstAttribute="trailing" secondItem="kuK-sN-eMz" secondAttribute="trailing" id="omh-ck-sT3"/>
                 <constraint firstAttribute="trailing" secondItem="Os5-8q-tCQ" secondAttribute="trailing" id="wfg-H5-deS"/>

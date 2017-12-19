@@ -13,6 +13,7 @@
 #import "SpeechRecognitionViewController.h"
 #import "SIDViewController.h"
 #import "ConstraintTestViewController.h"
+#import "RealmTestViewController.h"
 
 @interface FirstViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *photoBtn;
@@ -21,7 +22,8 @@
 @property (weak, nonatomic) IBOutlet UIButton *speechRecognitionBtn;
 @property (weak, nonatomic) IBOutlet UIButton *SIDBtn;
 @property (weak, nonatomic) IBOutlet UIButton *constraintBtn;
-
+@property (weak, nonatomic) IBOutlet UIButton *realmBtn;
+    
 @end
 
 @implementation FirstViewController
@@ -40,6 +42,7 @@
     [_speechRecognitionBtn setTitle:CustomLocalizedString(@"home_Speech", nil) forState:UIControlStateNormal];
     [_SIDBtn setTitle:CustomLocalizedString(@"home_SID", nil) forState:UIControlStateNormal];
     [_constraintBtn setTitle:CustomLocalizedString(@"home_constraint", nil) forState:UIControlStateNormal];
+    [_realmBtn setTitle:CustomLocalizedString(@"home_realm", nil) forState:UIControlStateNormal];
 }
 - (IBAction)selectPhoto:(id)sender {
     SelectPhotoViewController *vc = [[SelectPhotoViewController alloc] init];
@@ -65,6 +68,10 @@
     ConstraintTestViewController *vc = [[ConstraintTestViewController alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
 }
-
+- (IBAction)realmTest:(id)sender {
+    RealmTestViewController *vc = [[RealmTestViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+    
 
 @end

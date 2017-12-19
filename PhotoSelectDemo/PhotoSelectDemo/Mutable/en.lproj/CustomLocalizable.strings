@@ -19,6 +19,7 @@
 "understandingTitle" = "Semantic Understanding";
 "SIDTitle" = "SID Getting";
 "constraintTitle" = "Constraint Test";
+"realmTitle" = "realm Test";
 
 
 //home
@@ -28,4 +29,5 @@
 "home_Speech" = "Speech Recognition";
 "home_SID" = "SID";
 "home_constraint" = "XIB Constraint Test";
+"home_realm" = "Realm Test";
 
