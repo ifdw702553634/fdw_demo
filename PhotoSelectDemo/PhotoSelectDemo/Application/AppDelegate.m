@@ -35,6 +35,30 @@
     [[DTMutableLanguage shareInstance] initialize];
     [[DTMutableScene shareManager] initialize];
     
+    //开启使用 XcodeColors
+    setenv("XcodeColors", "YES", 0);
+    //检测
+    char *xcode_colors = getenv("XcodeColors");
+    if (xcode_colors && (strcmp(xcode_colors, "YES") == 0))
+    {
+        // XcodeColors is installed and enabled!
+        NSLog(@"XcodeColors is installed and enabled");
+    }
+    //开启DDLog 颜色
+    [[DDTTYLogger sharedInstance] setColorsEnabled:YES];
+    [[DDTTYLogger sharedInstance] setForegroundColor:[UIColor blueColor] backgroundColor:nil forFlag:DDLogFlagVerbose];
+    
+    //配置DDLog
+    [DDLog addLogger:[DDTTYLogger sharedInstance]]; // TTY = Xcode console
+    [DDLog addLogger:[DDASLLogger sharedInstance]]; // ASL = Apple System Logs
+    
+    DDFileLogger *fileLogger = [[DDFileLogger alloc] init]; // File Logger
+    fileLogger.rollingFrequency = 60 * 60 * 24; // 24 hour rolling
+    fileLogger.logFileManager.maximumNumberOfLogFiles = 7;
+    [DDLog addLogger:fileLogger];
+    
+    
+    
     //导航栏通用设置
     [[UINavigationBar appearance] setBackgroundImage:[UIImage imageWithColor:THEME_COLOR] forBarMetrics:UIBarMetricsDefault];
     [[UINavigationBar appearance] setShadowImage:[[UIImage alloc]init] ];

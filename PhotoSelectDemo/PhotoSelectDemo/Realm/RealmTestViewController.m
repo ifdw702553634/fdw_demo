@@ -32,17 +32,16 @@
     results = [RealmTestObj allObjectsInRealm:realm];
     
     //获取模拟器地址可以打开数据库文件所在文件夹
-    NSLog(@"%@", [RLMRealmConfiguration defaultConfiguration].fileURL);
+//    NSLog(@"%@", [RLMRealmConfiguration defaultConfiguration].fileURL);
+    DDLogDebug(@"%@", [RLMRealmConfiguration defaultConfiguration].fileURL);
     self.insertView.layer.borderColor = [UIColor lightGrayColor].CGColor;
     self.insertView.layer.borderWidth = 0.5f;
     
     self.tableView.tableFooterView = [[UIView alloc] init];
-//    [self creatDataBaseWithName:@"TestDB"];
     // Do any additional setup after loading the view from its nib.
 }
 
 - (IBAction)getData:(id)sender {
-    // 查询默认的 Realm 数据库
     results = [RealmTestObj allObjectsInRealm:realm]; // 从默认的 Realm 数据库中
     [self.tableView reloadData];
     NSLog(@"%@", results);

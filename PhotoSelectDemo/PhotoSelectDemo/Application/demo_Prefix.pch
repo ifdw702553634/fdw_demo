@@ -18,4 +18,17 @@
 #import <iflyMSC/iflyMSC.h>
 #import "PopupView.h"
 
+#import "DDLog.h"
+#import "DDASLLogger.h"
+#import "DDTTYLogger.h"
+#import "DDFileLogger.h"
+
+
+//!!DDLog 必须配置打印级别
+#ifdef DEBUG
+static const int ddLogLevel = DDLogLevelVerbose;
+#else
+static const int ddLogLevel = DDLogLevelWarning;
+#endif
+
 #endif /* demo_Prefix_pch */
