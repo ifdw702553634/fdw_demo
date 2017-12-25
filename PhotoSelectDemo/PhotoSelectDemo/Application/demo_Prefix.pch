@@ -18,10 +18,7 @@
 #import <iflyMSC/iflyMSC.h>
 #import "PopupView.h"
 
-#import "DDLog.h"
-#import "DDASLLogger.h"
-#import "DDTTYLogger.h"
-#import "DDFileLogger.h"
+#import "CocoaLumberjack.h"
 
 
 //!!DDLog 必须配置打印级别

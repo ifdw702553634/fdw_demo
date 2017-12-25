@@ -60,6 +60,8 @@
 		C345CD551FE8EE19006C132C /* RealmTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C345CD531FE8EE19006C132C /* RealmTestViewController.xib */; };
 		C34CF8E81FE36B4F00F47750 /* ConstraintTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C34CF8E61FE36B4F00F47750 /* ConstraintTestViewController.m */; };
 		C34CF8E91FE36B4F00F47750 /* ConstraintTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C34CF8E71FE36B4F00F47750 /* ConstraintTestViewController.xib */; };
+		C369B7151FF0900A00C8FED6 /* DTLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = C369B7141FF0900A00C8FED6 /* DTLogFormatter.m */; };
+		C369B7181FF0919100C8FED6 /* DTLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = C369B7171FF0919100C8FED6 /* DTLogger.m */; };
 		C36B3A251FE8F034002653D2 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C36B3A241FE8F034002653D2 /* Realm.framework */; };
 		C36B3A261FE8F03C002653D2 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C36B3A241FE8F034002653D2 /* Realm.framework */; };
 		C36B3A271FE8F03C002653D2 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C36B3A241FE8F034002653D2 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -281,6 +283,10 @@
 		C34CF8E51FE36B4F00F47750 /* ConstraintTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConstraintTestViewController.h; sourceTree = "<group>"; };
 		C34CF8E61FE36B4F00F47750 /* ConstraintTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConstraintTestViewController.m; sourceTree = "<group>"; };
 		C34CF8E71FE36B4F00F47750 /* ConstraintTestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConstraintTestViewController.xib; sourceTree = "<group>"; };
+		C369B7131FF0900A00C8FED6 /* DTLogFormatter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DTLogFormatter.h; sourceTree = "<group>"; };
+		C369B7141FF0900A00C8FED6 /* DTLogFormatter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DTLogFormatter.m; sourceTree = "<group>"; };
+		C369B7161FF0919100C8FED6 /* DTLogger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DTLogger.h; sourceTree = "<group>"; };
+		C369B7171FF0919100C8FED6 /* DTLogger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DTLogger.m; sourceTree = "<group>"; };
 		C36B3A241FE8F034002653D2 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
 		C36B3A291FE8F8A8002653D2 /* RealmTestObj.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RealmTestObj.h; sourceTree = "<group>"; };
 		C36B3A2A1FE8F8A8002653D2 /* RealmTestObj.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RealmTestObj.m; sourceTree = "<group>"; };
@@ -648,6 +654,10 @@
 		C345CD501FE8EE05006C132C /* Realm */ = {
 			isa = PBXGroup;
 			children = (
+				C369B7131FF0900A00C8FED6 /* DTLogFormatter.h */,
+				C369B7141FF0900A00C8FED6 /* DTLogFormatter.m */,
+				C369B7161FF0919100C8FED6 /* DTLogger.h */,
+				C369B7171FF0919100C8FED6 /* DTLogger.m */,
 				C380DF501FEA387F00795497 /* DDLog */,
 				C36B3A241FE8F034002653D2 /* Realm.framework */,
 				C345CD511FE8EE19006C132C /* RealmTestViewController.h */,
@@ -1085,10 +1095,12 @@
 				C30AF0ED1E26007C002A3949 /* SBJson4StreamTokeniser.m in Sources */,
 				C380DF7B1FEA3AAB00795497 /* DDASLLogCapture.m in Sources */,
 				C3213BD91E27190D00FB42E7 /* SemanticUnderstandingViewController.m in Sources */,
+				C369B7151FF0900A00C8FED6 /* DTLogFormatter.m in Sources */,
 				C30AF0F01E26007C002A3949 /* SBJson4Writer.m in Sources */,
 				C30AF0E81E26007C002A3949 /* PcmPlayer.m in Sources */,
 				C380DF7C1FEA3AAB00795497 /* DDAbstractDatabaseLogger.m in Sources */,
 				C30AF0EF1E26007C002A3949 /* SBJson4StreamWriterState.m in Sources */,
+				C369B7181FF0919100C8FED6 /* DTLogger.m in Sources */,
 				C31B0EDD1E24C26F00920165 /* MutableLanguageViewController.m in Sources */,
 				C31B0EE41E24C26F00920165 /* SelectPhotoViewController.m in Sources */,
 				C30AF0E71E26007C002A3949 /* AlertView.m in Sources */,

@@ -18,7 +18,7 @@
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (weak, nonatomic) IBOutlet UITextField *nameTxt;
 @property (weak, nonatomic) IBOutlet UITextField *titleTxt;
-    @property (weak, nonatomic) IBOutlet UIView *insertView;
+@property (weak, nonatomic) IBOutlet UIView *insertView;
     
 @end
 
@@ -120,6 +120,29 @@
     else if (editingStyle == UITableViewCellEditingStyleInsert) {
         // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
     }
+}
+
+/*获得系统日志的路径**/
+-(NSArray*)getLogPath
+{
+    NSString *docPath = [NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES) objectAtIndex:0];
+    NSString * logPath = [docPath stringByAppendingPathComponent:@"Caches"];
+    logPath = [logPath stringByAppendingPathComponent:@"Logs"];
+    NSFileManager * fileManger = [NSFileManager defaultManager];
+    NSError * error = nil;
+    NSArray * fileList = [[NSArray alloc]init];
+    fileList = [fileManger contentsOfDirectoryAtPath:logPath error:&error];
+    NSMutableArray * listArray = [[NSMutableArray alloc]init];
+    for (NSString * oneLogPath in fileList)
+    {
+        //带有工程名前缀的路径才是我们存储的日志路径
+        if([oneLogPath hasPrefix:[NSBundle mainBundle].bundleIdentifier])
+        {
+            NSString * truePath = [logPath stringByAppendingPathComponent:oneLogPath];
+            [listArray addObject:truePath];
+        }
+    }
+    return listArray;
 }
     
 - (void)didReceiveMemoryWarning {

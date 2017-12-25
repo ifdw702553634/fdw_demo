@@ -11,7 +11,8 @@
 #import "SelectPhotoViewController.h"
 #import "DTMutableLanguage.h"
 #import "DTMutableScene.h"
-//#import <DTDoorbellControl/DTBellMethod.h>
+#import "DTLogger.h"
+#import "DTLogFormatter.h"
 
 #define iflyAppId @"587593cd"
 
@@ -47,7 +48,6 @@
     //开启DDLog 颜色
     [[DDTTYLogger sharedInstance] setColorsEnabled:YES];
     [[DDTTYLogger sharedInstance] setForegroundColor:[UIColor blueColor] backgroundColor:nil forFlag:DDLogFlagVerbose];
-    
     //配置DDLog
     [DDLog addLogger:[DDTTYLogger sharedInstance]]; // TTY = Xcode console
     [DDLog addLogger:[DDASLLogger sharedInstance]]; // ASL = Apple System Logs
@@ -57,7 +57,13 @@
     fileLogger.logFileManager.maximumNumberOfLogFiles = 7;
     [DDLog addLogger:fileLogger];
     
+    DTLogger *logger = [DTLogger new];
+    [logger setLogFormatter:[DTLogFormatter new]];
+    [DDLog addLogger:logger];
     
+    //获取log文件夹位置
+    NSString *logDirectory = [fileLogger.logFileManager logsDirectory];
+    DDLogDebug(@"%@", logDirectory);
     
     //导航栏通用设置
     [[UINavigationBar appearance] setBackgroundImage:[UIImage imageWithColor:THEME_COLOR] forBarMetrics:UIBarMetricsDefault];
