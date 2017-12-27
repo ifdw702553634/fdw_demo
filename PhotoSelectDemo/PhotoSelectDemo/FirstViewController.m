@@ -47,7 +47,8 @@ static NSString *kFirstTableViewCell = @"FirstTableViewCell";
   @{@"title":CustomLocalizedString(@"home_Speech", nil),@"controller":@"SpeechRecognitionViewController"},
   @{@"title":CustomLocalizedString(@"home_SID", nil),@"controller":@"SIDViewController"},
   @{@"title":CustomLocalizedString(@"home_constraint", nil),@"controller":@"ConstraintTestViewController"},
-  @{@"title":CustomLocalizedString(@"home_realm", nil),@"controller":@"RealmTestViewController"}];
+  @{@"title":CustomLocalizedString(@"home_realm", nil),@"controller":@"RealmTestViewController"},
+  @{@"title":CustomLocalizedString(@"home_tableViewAn", nil),@"controller":@"TableViewAnViewController"}];
 }
 
 

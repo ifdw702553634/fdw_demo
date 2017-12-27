@@ -21,6 +21,8 @@
 "SIDTitle" = "獲取 SID";
 "constraintTitle" = "約束測試";
 "realmTitle" = "realm測試";
+"tableViewAnTitle" = "TableView動畫";
+
 
 
 //home
@@ -31,3 +33,4 @@
 "home_SID" = "SID";
 "home_constraint" = "xib約束測試";
 "home_realm" = "Realm測試";
+"home_tableViewAn" = "TableView動畫";

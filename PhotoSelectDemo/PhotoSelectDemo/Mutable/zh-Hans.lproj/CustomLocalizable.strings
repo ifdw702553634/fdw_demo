@@ -20,6 +20,8 @@
 "SIDTitle" = "获取SID";
 "constraintTitle" = "约束测试";
 "realmTitle" = "realm测试";
+"tableViewAnTitle" = "TableView动画";
+
 
 //home
 "home_Photo" = "照片";
@@ -29,6 +31,7 @@
 "home_SID" = "SID";
 "home_constraint" = "xib约束测试";
 "home_realm" = "Realm测试";
+"home_tableViewAn" = "TableView动画";
 
 //scene
 "backgroundColor_0" = "#d3ebdc";
