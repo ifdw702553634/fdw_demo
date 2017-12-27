@@ -1,23 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FirstViewController">
             <connections>
-                <outlet property="SIDBtn" destination="Os5-8q-tCQ" id="769-B4-AI5"/>
-                <outlet property="constraintBtn" destination="kuK-sN-eMz" id="kEV-qO-ha0"/>
-                <outlet property="mutableLanguageBtn" destination="wjv-cM-UcU" id="z8Z-Pz-zW3"/>
-                <outlet property="mutableSceneBtn" destination="oU1-ro-m1q" id="2u4-mv-bPC"/>
-                <outlet property="photoBtn" destination="a0M-sp-Gv7" id="SQm-0D-TRp"/>
-                <outlet property="realmBtn" destination="6tc-6C-Jug" id="TrD-yT-cH1"/>
-                <outlet property="speechRecognitionBtn" destination="z6W-D3-IRm" id="IEV-va-uVX"/>
+                <outlet property="tableView" destination="1py-dc-JUE" id="Rx9-W1-BJq"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -26,100 +21,18 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a0M-sp-Gv7">
-                    <rect key="frame" x="0.0" y="1" width="375" height="65"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="65" id="AYp-8l-6mk"/>
-                    </constraints>
-                    <state key="normal" title="照片"/>
-                    <connections>
-                        <action selector="selectPhoto:" destination="-1" eventType="touchUpInside" id="zPZ-gu-WQJ"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wjv-cM-UcU">
-                    <rect key="frame" x="0.0" y="66" width="375" height="58"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="58" id="8XF-V0-mam"/>
-                    </constraints>
-                    <state key="normal" title="多语言切换"/>
-                    <connections>
-                        <action selector="mutableLanguage:" destination="-1" eventType="touchUpInside" id="bDS-S1-tye"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oU1-ro-m1q">
-                    <rect key="frame" x="0.0" y="124" width="375" height="55"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="55" id="p3Z-ok-J40"/>
-                    </constraints>
-                    <state key="normal" title="多场景切换"/>
-                    <connections>
-                        <action selector="mutableScene:" destination="-1" eventType="touchUpInside" id="lGU-Pl-4UU"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z6W-D3-IRm">
-                    <rect key="frame" x="0.0" y="179" width="375" height="51"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="51" id="51b-5x-Jsl"/>
-                    </constraints>
-                    <state key="normal" title="语音识别"/>
-                    <connections>
-                        <action selector="speechRecognition:" destination="-1" eventType="touchUpInside" id="oFD-K6-yxi"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Os5-8q-tCQ">
-                    <rect key="frame" x="0.0" y="230" width="375" height="51"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="51" id="JWZ-81-Jn2"/>
-                    </constraints>
-                    <state key="normal" title="SID"/>
-                    <connections>
-                        <action selector="getSID:" destination="-1" eventType="touchUpInside" id="Lit-bt-NSb"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kuK-sN-eMz">
-                    <rect key="frame" x="0.0" y="281" width="375" height="51"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="51" id="P8q-MU-4qG"/>
-                    </constraints>
-                    <state key="normal" title="xib约束测试"/>
-                    <connections>
-                        <action selector="constraintTest:" destination="-1" eventType="touchUpInside" id="BaM-FT-lJP"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6tc-6C-Jug">
-                    <rect key="frame" x="0.0" y="332" width="375" height="51"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="51" id="eSa-7y-xG7"/>
-                    </constraints>
-                    <state key="normal" title="Realm测试"/>
-                    <connections>
-                        <action selector="realmTest:" destination="-1" eventType="touchUpInside" id="0vu-nf-RUY"/>
-                    </connections>
-                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1py-dc-JUE">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
             </subviews>
             <constraints>
-                <constraint firstItem="kuK-sN-eMz" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="0pr-wF-e7R"/>
-                <constraint firstItem="z6W-D3-IRm" firstAttribute="top" secondItem="oU1-ro-m1q" secondAttribute="bottom" id="4PT-0V-VAm"/>
-                <constraint firstAttribute="trailing" secondItem="oU1-ro-m1q" secondAttribute="trailing" id="7vx-Xr-2qx"/>
-                <constraint firstAttribute="trailing" secondItem="a0M-sp-Gv7" secondAttribute="trailing" id="9b9-Dp-wca"/>
-                <constraint firstItem="a0M-sp-Gv7" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Ceg-iV-yz9"/>
-                <constraint firstAttribute="trailing" secondItem="z6W-D3-IRm" secondAttribute="trailing" id="DEK-aK-zKZ"/>
-                <constraint firstItem="6tc-6C-Jug" firstAttribute="top" secondItem="kuK-sN-eMz" secondAttribute="bottom" id="QxP-5D-9tz"/>
-                <constraint firstItem="oU1-ro-m1q" firstAttribute="top" secondItem="wjv-cM-UcU" secondAttribute="bottom" id="YSw-04-A3B"/>
-                <constraint firstItem="wjv-cM-UcU" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="a5n-12-aUT"/>
-                <constraint firstItem="kuK-sN-eMz" firstAttribute="top" secondItem="Os5-8q-tCQ" secondAttribute="bottom" id="aWz-bx-9yp"/>
-                <constraint firstItem="Os5-8q-tCQ" firstAttribute="top" secondItem="z6W-D3-IRm" secondAttribute="bottom" id="b4U-XU-PWM"/>
-                <constraint firstItem="z6W-D3-IRm" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="cQt-vB-Dxg"/>
-                <constraint firstItem="wjv-cM-UcU" firstAttribute="top" secondItem="a0M-sp-Gv7" secondAttribute="bottom" id="chs-16-D8Z"/>
-                <constraint firstItem="6tc-6C-Jug" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="dqn-kg-wWZ"/>
-                <constraint firstAttribute="trailing" secondItem="wjv-cM-UcU" secondAttribute="trailing" id="fHS-o4-Ce1"/>
-                <constraint firstItem="oU1-ro-m1q" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="fqt-RK-B5y"/>
-                <constraint firstItem="Os5-8q-tCQ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="hND-q7-lJC"/>
-                <constraint firstAttribute="trailing" secondItem="6tc-6C-Jug" secondAttribute="trailing" id="lXq-jJ-RXW"/>
-                <constraint firstItem="a0M-sp-Gv7" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="1" id="oQ9-2U-nfA"/>
-                <constraint firstAttribute="trailing" secondItem="kuK-sN-eMz" secondAttribute="trailing" id="omh-ck-sT3"/>
-                <constraint firstAttribute="trailing" secondItem="Os5-8q-tCQ" secondAttribute="trailing" id="wfg-H5-deS"/>
+                <constraint firstItem="1py-dc-JUE" firstAttribute="leading" secondItem="37G-2M-wGG" secondAttribute="leading" id="g9z-Av-vOE"/>
+                <constraint firstItem="1py-dc-JUE" firstAttribute="trailing" secondItem="37G-2M-wGG" secondAttribute="trailing" id="vbf-Oq-PIF"/>
+                <constraint firstItem="1py-dc-JUE" firstAttribute="bottom" secondItem="37G-2M-wGG" secondAttribute="bottom" id="xsE-Yw-zuf"/>
+                <constraint firstItem="1py-dc-JUE" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="yc5-hX-6lO"/>
             </constraints>
+            <viewLayoutGuide key="safeArea" id="37G-2M-wGG"/>
             <point key="canvasLocation" x="32.5" y="62.5"/>
         </view>
     </objects>

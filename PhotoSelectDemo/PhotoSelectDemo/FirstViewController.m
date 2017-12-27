@@ -7,22 +7,16 @@
 //
 
 #import "FirstViewController.h"
-#import "SelectPhotoViewController.h"
-#import "MutableLanguageViewController.h"
-#import "MutableSceneViewController.h"
-#import "SpeechRecognitionViewController.h"
-#import "SIDViewController.h"
-#import "ConstraintTestViewController.h"
-#import "RealmTestViewController.h"
+#import "FirstTableViewCell.h"
 
-@interface FirstViewController ()
-@property (weak, nonatomic) IBOutlet UIButton *photoBtn;
-@property (weak, nonatomic) IBOutlet UIButton *mutableLanguageBtn;
-@property (weak, nonatomic) IBOutlet UIButton *mutableSceneBtn;
-@property (weak, nonatomic) IBOutlet UIButton *speechRecognitionBtn;
-@property (weak, nonatomic) IBOutlet UIButton *SIDBtn;
-@property (weak, nonatomic) IBOutlet UIButton *constraintBtn;
-@property (weak, nonatomic) IBOutlet UIButton *realmBtn;
+
+static NSString *kFirstTableViewCell = @"FirstTableViewCell";
+
+@interface FirstViewController ()<UITableViewDelegate,UITableViewDataSource>{
+    NSArray *_dataArr;
+}
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+
     
 @end
 
@@ -36,41 +30,62 @@
 {
     [super viewWillAppear:animated];
     self.title = CustomLocalizedString(@"homeTitle", nil);
-    [_photoBtn setTitle:CustomLocalizedString(@"home_Photo", nil) forState:UIControlStateNormal];
-    [_mutableLanguageBtn setTitle:CustomLocalizedString(@"home_MutableLanguage", nil) forState:UIControlStateNormal];
-    [_mutableSceneBtn setTitle:CustomLocalizedString(@"home_MutableScene", nil) forState:UIControlStateNormal];
-    [_speechRecognitionBtn setTitle:CustomLocalizedString(@"home_Speech", nil) forState:UIControlStateNormal];
-    [_SIDBtn setTitle:CustomLocalizedString(@"home_SID", nil) forState:UIControlStateNormal];
-    [_constraintBtn setTitle:CustomLocalizedString(@"home_constraint", nil) forState:UIControlStateNormal];
-    [_realmBtn setTitle:CustomLocalizedString(@"home_realm", nil) forState:UIControlStateNormal];
+    [self loadData];
+    [self prepareView];
 }
-- (IBAction)selectPhoto:(id)sender {
-    SelectPhotoViewController *vc = [[SelectPhotoViewController alloc] init];
+
+- (void)prepareView{
+    self.tableView.delegate = self;
+    self.tableView.dataSource = self;
+    self.tableView.tableFooterView = [[UIView alloc] init];
+}
+- (void)loadData{
+    _dataArr = @[
+  @{@"title":CustomLocalizedString(@"home_Photo", nil),@"controller":@"SelectPhotoViewController"},
+  @{@"title":CustomLocalizedString(@"home_MutableLanguage", nil),@"controller":@"MutableLanguageViewController"},
+  @{@"title":CustomLocalizedString(@"home_MutableScene", nil),@"controller":@"MutableSceneViewController"},
+  @{@"title":CustomLocalizedString(@"home_Speech", nil),@"controller":@"SpeechRecognitionViewController"},
+  @{@"title":CustomLocalizedString(@"home_SID", nil),@"controller":@"SIDViewController"},
+  @{@"title":CustomLocalizedString(@"home_constraint", nil),@"controller":@"ConstraintTestViewController"},
+  @{@"title":CustomLocalizedString(@"home_realm", nil),@"controller":@"RealmTestViewController"}];
+}
+
+
+#pragma mark - tableview delegate
+
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return _dataArr.count;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return 50;
+}
+
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    FirstTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kFirstTableViewCell];
+    if (cell == nil) {
+        //通过xib的名称加载自定义的cell
+        cell = [[[NSBundle mainBundle] loadNibNamed:kFirstTableViewCell owner:self options:nil] lastObject];
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    }
+    cell.title.text = _dataArr[indexPath.row][@"title"];
+    return cell;
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    UIViewController *vc = [[NSClassFromString(_dataArr[indexPath.row][@"controller"]) alloc]init];
     [self.navigationController pushViewController:vc animated:YES];
 }
-- (IBAction)mutableLanguage:(id)sender {
-    MutableLanguageViewController *vc = [[MutableLanguageViewController alloc] init];
-    [self.navigationController pushViewController:vc animated:YES];
-}
-- (IBAction)mutableScene:(id)sender {
-    MutableSceneViewController *vc = [[MutableSceneViewController alloc] init];
-    [self.navigationController pushViewController:vc animated:YES];
-}
-- (IBAction)speechRecognition:(id)sender {
-    SpeechRecognitionViewController *vc = [[SpeechRecognitionViewController alloc] init];
-    [self.navigationController pushViewController:vc animated:YES];
-}
-- (IBAction)getSID:(id)sender {
-    SIDViewController *vc = [[SIDViewController alloc] init];
-    [self.navigationController pushViewController:vc animated:YES];
-}
-- (IBAction)constraintTest:(id)sender {
-    ConstraintTestViewController *vc = [[ConstraintTestViewController alloc] init];
-    [self.navigationController pushViewController:vc animated:YES];
-}
-- (IBAction)realmTest:(id)sender {
-    RealmTestViewController *vc = [[RealmTestViewController alloc] init];
-    [self.navigationController pushViewController:vc animated:YES];
+
+//设置cell分割线做对齐
+-(void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPat{
+    if ([cell respondsToSelector:@selector(setLayoutMargins:)]) {
+        [cell setLayoutMargins:UIEdgeInsetsZero];
+    }
+    if ([cell respondsToSelector:@selector(setSeparatorInset:)]){
+        [cell setSeparatorInset:UIEdgeInsetsZero];
+    }
 }
     
 
