@@ -30,7 +30,7 @@ static CGFloat headerHeight = 10;
     [super viewDidLoad];
     self.title = CustomLocalizedString(@"tableViewAnTitle", nil);
     [self prepareView];
-    
+
     _dataArr = [[NSMutableArray alloc] init];
     _isInsert = NO;
     // Do any additional setup after loading the view from its nib.
@@ -72,16 +72,17 @@ static CGFloat headerHeight = 10;
         }
         __block AnButtonTableViewCell *weakCell = cell;
         cell.addCellBolck = ^(){
+            //点击按钮之后先将按钮的cell往下移动
             CATransform3D transform = CATransform3DIdentity;
             transform = CATransform3DTranslate(transform, 0, 0, 0);
             weakCell.layer.transform = transform;
-            [UIView animateWithDuration:0.3 delay:0 options:UIViewAnimationOptionCurveEaseOut animations:^{
+            [UIView animateWithDuration:0.2 delay:0 options:UIViewAnimationOptionCurveEaseOut animations:^{
                 weakCell.layer.transform = CATransform3DTranslate(transform, 0, -10, 0);
             } completion:^(BOOL finished) {
-                [UIView animateWithDuration:1 delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
+                [UIView animateWithDuration:0.7 delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
                     weakCell.layer.transform = CATransform3DTranslate(weakCell.layer.transform, 0, cellHeight+headerHeight+30, 0);
                 } completion:^(BOOL finished) {
-                    [UIView animateWithDuration:0.4 delay:0 options:UIViewAnimationOptionCurveEaseOut animations:^{
+                    [UIView animateWithDuration:0.3 delay:0 options:UIViewAnimationOptionCurveEaseOut animations:^{
                         weakCell.layer.transform = CATransform3DTranslate(weakCell.layer.transform, 0, -20, 0);
                     } completion:^(BOOL finished) {
                         _isInsert = YES;
@@ -119,23 +120,23 @@ static CGFloat headerHeight = 10;
 -(void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPat{
     if (_isInsert == YES) {
         if (indexPat.section == _dataArr.count - 1) {
+            //此处动画是cell向左移
             CATransform3D transform = CATransform3DIdentity;
             transform = CATransform3DTranslate(transform, SCREEN_WIDTH, 0, 0);
             cell.layer.transform = transform;
-            [UIView animateWithDuration:0.8 delay:0 options:UIViewAnimationOptionCurveLinear animations:^{
+            [UIView animateWithDuration:0.6 delay:0 options:UIViewAnimationOptionCurveEaseIn animations:^{
                 cell.layer.transform = CATransform3DIdentity;
             } completion:^(BOOL finished) {
-                [UIView animateWithDuration:0.4 delay:0 options:UIViewAnimationOptionCurveEaseOut animations:^{
+                [UIView animateWithDuration:0.3 delay:0 options:UIViewAnimationOptionCurveEaseOut animations:^{
                     cell.layer.transform = CATransform3DTranslate(CATransform3DIdentity, -50, 0, 0);
                 } completion:^(BOOL finished) {
-                    [UIView animateWithDuration:0.4 delay:0 options:UIViewAnimationOptionCurveEaseOut animations:^{
+                    [UIView animateWithDuration:0.3 delay:0 options:UIViewAnimationOptionCurveEaseOut animations:^{
                         cell.layer.transform = CATransform3DIdentity;
                     } completion:^(BOOL finished) {
                         _isInsert = NO;
                     }];
                 }];
             }];
-            
         }
     }
     

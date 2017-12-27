@@ -49,6 +49,7 @@ static NSString *kFirstTableViewCell = @"FirstTableViewCell";
   @{@"title":CustomLocalizedString(@"home_constraint", nil),@"controller":@"ConstraintTestViewController"},
   @{@"title":CustomLocalizedString(@"home_realm", nil),@"controller":@"RealmTestViewController"},
   @{@"title":CustomLocalizedString(@"home_tableViewAn", nil),@"controller":@"TableViewAnViewController"}];
+    [self.tableView reloadData];
 }
 
 
