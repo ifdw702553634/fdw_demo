@@ -31,8 +31,7 @@
     realm = [RLMRealm realmWithURL:[[RealmShare shareManager] getRLMDefaultRealmURL]];
     results = [RealmTestObj allObjectsInRealm:realm];
     
-    //获取模拟器地址可以打开数据库文件所在文件夹
-//    NSLog(@"%@", [RLMRealmConfiguration defaultConfiguration].fileURL);
+    //获取模拟器地址可以打开数据库文件所在文件
     DDLogDebug(@"%@", [RLMRealmConfiguration defaultConfiguration].fileURL);
     self.insertView.layer.borderColor = [UIColor lightGrayColor].CGColor;
     self.insertView.layer.borderWidth = 0.5f;

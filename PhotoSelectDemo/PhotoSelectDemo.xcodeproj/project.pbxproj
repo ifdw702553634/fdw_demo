@@ -1377,7 +1377,7 @@
 				LINK_WITH_STANDARD_LIBRARIES = YES;
 				OTHER_LDFLAGS = "-ObjC";
 				"OTHER_LDFLAGS[sdk=iphonesimulator*]" = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = cn.com.dreamtouch.gbell;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.com.fdw.demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -1410,7 +1410,7 @@
 				);
 				LINK_WITH_STANDARD_LIBRARIES = YES;
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = cn.com.dreamtouch.gbell;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.com.fdw.demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -1472,7 +1472,7 @@
 				DEVELOPMENT_TEAM = 442JW2LPFQ;
 				INFOPLIST_FILE = TodayExtentionDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = cn.com.dreamtouch.gbell.TodayExtentionDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.com.fdw.demo.TodayExtentionDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -1485,7 +1485,7 @@
 				DEVELOPMENT_TEAM = 442JW2LPFQ;
 				INFOPLIST_FILE = TodayExtentionDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = cn.com.dreamtouch.gbell.TodayExtentionDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.com.fdw.demo.TodayExtentionDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -1504,7 +1504,7 @@
 				INFOPLIST_FILE = TodayKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = cn.com.dreamtouch.TodayKit;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.com.fdw.TodayKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1525,7 +1525,7 @@
 				INFOPLIST_FILE = TodayKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = cn.com.dreamtouch.TodayKit;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.com.fdw.TodayKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				VERSIONING_SYSTEM = "apple-generic";
