@@ -21,6 +21,7 @@
 "constraintTitle" = "约束测试";
 "realmTitle" = "realm测试";
 "tableViewAnTitle" = "TableView动画";
+"bezierTitle" = "贝塞尔曲线";
 
 
 //home
@@ -32,6 +33,7 @@
 "home_constraint" = "xib约束测试";
 "home_realm" = "Realm测试";
 "home_tableViewAn" = "TableView动画";
+"home_bezier" = "贝塞尔曲线";
 
 //scene
 "backgroundColor_0" = "#d3ebdc";
@@ -41,3 +43,4 @@
 "backgroundColor_4" = "#929292";
 "backgroundColor_5" = "#ebeace";
 "backgroundColor_6" = "#e2f8e6";
+

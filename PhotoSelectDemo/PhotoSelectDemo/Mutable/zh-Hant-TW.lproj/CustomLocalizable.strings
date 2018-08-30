@@ -22,6 +22,8 @@
 "constraintTitle" = "約束測試";
 "realmTitle" = "realm測試";
 "tableViewAnTitle" = "TableView動畫";
+"bezierTitle" = "貝塞爾曲線";
+
 
 
 
@@ -34,3 +36,4 @@
 "home_constraint" = "xib約束測試";
 "home_realm" = "Realm測試";
 "home_tableViewAn" = "TableView動畫";
+"home_bezier" = "貝塞爾曲線";

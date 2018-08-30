@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C3002AF320CFAF3200B52035 /* BezierViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3002AF120CFAF3200B52035 /* BezierViewController.m */; };
+		C3002AF420CFAF3200B52035 /* BezierViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3002AF220CFAF3200B52035 /* BezierViewController.xib */; };
 		C30AF09C1E25C4E1002A3949 /* UINavigationBar+BackgroundColor.m in Sources */ = {isa = PBXBuildFile; fileRef = C30AF09B1E25C4E1002A3949 /* UINavigationBar+BackgroundColor.m */; };
 		C30AF0A11E25D147002A3949 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C30AF0A01E25D147002A3949 /* CoreLocation.framework */; };
 		C30AF0A31E25D158002A3949 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C30AF0A21E25D158002A3949 /* CoreTelephony.framework */; };
@@ -78,6 +80,7 @@
 		C380DF831FEA3AAB00795497 /* DDASLLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = C380DF731FEA3AAA00795497 /* DDASLLogger.m */; };
 		C380DF841FEA3AAB00795497 /* DDFileLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = C380DF751FEA3AAA00795497 /* DDFileLogger.m */; };
 		C380DF851FEA3AAB00795497 /* DDOSLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = C380DF761FEA3AAA00795497 /* DDOSLogger.m */; };
+		C3904D292136831F00128E7E /* BezierView.m in Sources */ = {isa = PBXBuildFile; fileRef = C3904D282136831F00128E7E /* BezierView.m */; };
 		C3AC8E411E120AEE0053992A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C332359B1DE28FF500E6D3D7 /* Assets.xcassets */; };
 		C3AC8E431E120AF40053992A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C332359B1DE28FF500E6D3D7 /* Assets.xcassets */; };
 		C3B93D701FF341EA00374DF1 /* FirstTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C3B93D6E1FF341EA00374DF1 /* FirstTableViewCell.m */; };
@@ -197,6 +200,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C3002AF020CFAF3200B52035 /* BezierViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BezierViewController.h; sourceTree = "<group>"; };
+		C3002AF120CFAF3200B52035 /* BezierViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BezierViewController.m; sourceTree = "<group>"; };
+		C3002AF220CFAF3200B52035 /* BezierViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BezierViewController.xib; sourceTree = "<group>"; };
 		C30AF09A1E25C4E1002A3949 /* UINavigationBar+BackgroundColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+BackgroundColor.h"; sourceTree = "<group>"; };
 		C30AF09B1E25C4E1002A3949 /* UINavigationBar+BackgroundColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+BackgroundColor.m"; sourceTree = "<group>"; };
 		C30AF0A01E25D147002A3949 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -325,6 +331,8 @@
 		C380DF781FEA3AAA00795497 /* DDASLLogCapture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDASLLogCapture.h; sourceTree = "<group>"; };
 		C380DF791FEA3AAA00795497 /* DDLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDLog.h; sourceTree = "<group>"; };
 		C380DF7A1FEA3AAA00795497 /* DDASLLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDASLLogger.h; sourceTree = "<group>"; };
+		C3904D272136831F00128E7E /* BezierView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BezierView.h; sourceTree = "<group>"; };
+		C3904D282136831F00128E7E /* BezierView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BezierView.m; sourceTree = "<group>"; };
 		C3B921531EF12EF700319DEE /* PhotoSelectDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PhotoSelectDemo.entitlements; sourceTree = "<group>"; };
 		C3B93D6D1FF341EA00374DF1 /* FirstTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstTableViewCell.h; sourceTree = "<group>"; };
 		C3B93D6E1FF341EA00374DF1 /* FirstTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstTableViewCell.m; sourceTree = "<group>"; };
@@ -452,6 +460,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C3002AEF20CFAF1400B52035 /* Bezier */ = {
+			isa = PBXGroup;
+			children = (
+				C3002AF020CFAF3200B52035 /* BezierViewController.h */,
+				C3002AF120CFAF3200B52035 /* BezierViewController.m */,
+				C3002AF220CFAF3200B52035 /* BezierViewController.xib */,
+				C3904D272136831F00128E7E /* BezierView.h */,
+				C3904D282136831F00128E7E /* BezierView.m */,
+			);
+			path = Bezier;
+			sourceTree = "<group>";
+		};
 		C30AF0B41E25D447002A3949 /* Speech */ = {
 			isa = PBXGroup;
 			children = (
@@ -604,6 +624,7 @@
 				C34CF8E41FE36B2300F47750 /* ConstraintTest */,
 				C345CD501FE8EE05006C132C /* Realm */,
 				C3B93D721FF345EC00374DF1 /* TableViewAn */,
+				C3002AEF20CFAF1400B52035 /* Bezier */,
 				C332359B1DE28FF500E6D3D7 /* Assets.xcassets */,
 				C3BA14BE1FE2504A00FE3780 /* Application */,
 				C332358F1DE28FF500E6D3D7 /* Supporting Files */,
@@ -1044,6 +1065,7 @@
 				C31B0EDE1E24C26F00920165 /* MutableLanguageViewController.xib in Resources */,
 				C30AF0BE1E25D496002A3949 /* SpeechRecognitionViewController.xib in Resources */,
 				C31B0EE31E24C26F00920165 /* SelectPhotoCollectionViewCell.xib in Resources */,
+				C3002AF420CFAF3200B52035 /* BezierViewController.xib in Resources */,
 				C31B0EFC1E24C47200920165 /* CustomLocalizable.strings in Resources */,
 				C345CD551FE8EE19006C132C /* RealmTestViewController.xib in Resources */,
 				C31B0EE51E24C26F00920165 /* SelectPhotoViewController.xib in Resources */,
@@ -1131,6 +1153,7 @@
 				C30AF0ED1E26007C002A3949 /* SBJson4StreamTokeniser.m in Sources */,
 				C380DF7B1FEA3AAB00795497 /* DDASLLogCapture.m in Sources */,
 				C3213BD91E27190D00FB42E7 /* SemanticUnderstandingViewController.m in Sources */,
+				C3002AF320CFAF3200B52035 /* BezierViewController.m in Sources */,
 				C369B7151FF0900A00C8FED6 /* DTLogFormatter.m in Sources */,
 				C3B93D701FF341EA00374DF1 /* FirstTableViewCell.m in Sources */,
 				C30AF0F01E26007C002A3949 /* SBJson4Writer.m in Sources */,
@@ -1156,6 +1179,7 @@
 				C36B3A2B1FE8F8A8002653D2 /* RealmTestObj.m in Sources */,
 				C33235911DE28FF500E6D3D7 /* main.m in Sources */,
 				C380DF821FEA3AAB00795497 /* DDMultiFormatter.m in Sources */,
+				C3904D292136831F00128E7E /* BezierView.m in Sources */,
 				C3D21DB31DF119C10060B14F /* FirstViewController.m in Sources */,
 				C30AF0E91E26007C002A3949 /* PopupView.m in Sources */,
 				C30AF0EA1E26007C002A3949 /* SBJson4Parser.m in Sources */,
